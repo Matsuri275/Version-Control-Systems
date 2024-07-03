@@ -30,7 +30,6 @@ int main() {
         printf("You won!\n");
     } else {
         printf("You lost!\n");
-    return 0;
     }   
 
     return 0;

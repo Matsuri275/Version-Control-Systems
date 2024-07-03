@@ -25,4 +25,5 @@ int main() {
     } else {
         printf("You lost!\n");
     return 0;
-}   
+    }   
+}

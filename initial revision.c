@@ -7,9 +7,17 @@ char* toss_coin() {
 }
 
 int main() {
- printf("Tossing a coin...\n");
+     
+     char name[50];
+    printf("Who are you?\n> ");
+    scanf("%s", name);
+    printf("Hello, %s!\n", name);
+    
+    printf("Tossing a coin...\n");
+
     srand(time(0));
-    int heads_count = 0, tails_count = 0;
+  
+  　int heads_count = 0, tails_count = 0;
 
     for (int i = 1; i <= 3; i++) {
         char* result = toss_coin();

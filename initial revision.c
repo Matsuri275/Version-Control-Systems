@@ -14,8 +14,10 @@ int main() {
     printf("Hello, %s!\n", name);
     
     printf("Tossing a coin...\n");
+
     srand(time(0));
-    int heads_count = 0, tails_count = 0;
+  
+  　int heads_count = 0, tails_count = 0;
 
     for (int i = 1; i <= 3; i++) {
         char* result = toss_coin();
@@ -26,5 +28,11 @@ int main() {
 
     printf("Heads: %d, Tails: %d\n", heads_count, tails_count);
     
-    return 0;
-}   
+    if (heads_count > tails_count) {
+        printf("You won!\n");
+    } else {
+        printf("You lost!\n");
+    }
+    
+    return 0;   
+}

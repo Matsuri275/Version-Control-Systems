@@ -25,7 +25,6 @@ int main() {
     }
 
     printf("Heads: %d, Tails: %d\n", heads_count, tails_count);
-     
-
+    
     return 0;
 }   
